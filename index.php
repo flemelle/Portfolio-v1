@@ -167,7 +167,7 @@ Je suis actuellement en première année BTS SIO SLAM à l'Institut National des
                     <form method = 'post' action = 'traitement_contact.php'>
                             <input type="email" name="email" placeholder = 'Adresse e-mail' required="required" />
                             <textarea name = "message" id = "message" placeholder = 'Message' required="required"></textarea>
-                        <div id = 'captcha'><div class="g-recaptcha" data-theme="dark" data-sitekey="6LfDOhMgAAAAAG0jvSFlKnxYyi1uOoEwc5Y5kxyA"></div></div>
+                        <div id = 'captcha'><div class="g-recaptcha" data-theme="dark" data-sitekey=""></div></div>
                         <div id = 'submit-container'>
                             <input name = 'submit' type="submit" value="Envoyer" />
                         </div>
