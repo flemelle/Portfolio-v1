@@ -1,23 +1,24 @@
 version: '3.8'
 
 services:
+  monsite-php:
+    image: php:8.2-apache
+    container_name: korra
+    volumes:
+      - ./www:/var/www/html
+    environment:
+      - VIRTUAL_HOST=www.korra.dev
+      - LETSENCRYPT_HOST=www.korra.dev
+      - LETSENCRYPT_EMAIL=admin@korra.dev
+    networks:
+      - web
+    restart: unless-stopped
+
+networks:
   web:
-    image: nginx:latest
-    container_name: nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./src:/var/www/html
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - php
+    external: true
 
-  php:
-    image: php:8.2-fpm
-    container_name: php
-    volumes:
-      - ./src:/var/www/html
-
+    
   # Facultatif : base de données
   # db:
   #   image: mariadb
