@@ -1,7 +1,7 @@
 <?php
     session_start();
-    include('db/PDO.php');
-    include ('log.php');
+   /* include('db/PDO.php');
+    include ('log.php');*/
 ?>
 <!DOCTYPE html>
 <html>
