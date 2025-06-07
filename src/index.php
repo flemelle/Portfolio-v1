@@ -1,11 +1,5 @@
 <?php
     session_start();
-<<<<<<< HEAD
-
-=======
-    /*include('db/PDO.php');
->>>>>>> 69be646fbef52526b23bb3a5479ee5fc20a0be7e
-    include ('log.php');*/
 ?>
 <!DOCTYPE html>
 <html>
