@@ -1,6 +1,10 @@
 <?php
     session_start();
-   /* include('db/PDO.php');
+<<<<<<< HEAD
+
+=======
+    /*include('db/PDO.php');
+>>>>>>> 69be646fbef52526b23bb3a5479ee5fc20a0be7e
     include ('log.php');*/
 ?>
 <!DOCTYPE html>
@@ -161,6 +165,7 @@ Je suis actuellement en première année BTS SIO SLAM à l'Institut National des
                 </p>
                 </div>
             </section>
+            <!--
             <section id = 'contact'>
                 <div id = 'section-title'><h1>CONTACT</h1></div>
                 <div id = 'formular-container'>
@@ -174,6 +179,7 @@ Je suis actuellement en première année BTS SIO SLAM à l'Institut National des
                     </form>
                 </div>
             </section>
+            -->
 			<div id = 'notification-background'>
 				<div id = 'sent_notification'>
 					<img src = 'img/icons8-mail-100.png' id = 'notification-icon'>
@@ -211,7 +217,7 @@ Je suis actuellement en première année BTS SIO SLAM à l'Institut National des
     </body>
 </html>
 <?php
-    if ($_SESSION['sentmail']){
+    /*if ($_SESSION['sentmail']){
     echo
      '<script type="text/javascript">',
      'sent_appear();',
@@ -224,5 +230,5 @@ Je suis actuellement en première année BTS SIO SLAM à l'Institut National des
      'captcha_appear();',
      '</script>';
         $_SESSION['captcha'] = false;
-    }
+    }*/
 ?>
