@@ -5,7 +5,7 @@ services:
     image: php:8.2-apache
     container_name: korra
     volumes:
-      - ./www:/var/www/html
+      - ./src:/var/www/html
     environment:
       - VIRTUAL_HOST=www.korra.dev
       - LETSENCRYPT_HOST=www.korra.dev
