@@ -17,14 +17,3 @@ services:
 networks:
   web:
     external: true
-
-    
-  # Facultatif : base de données
-  # db:
-  #   image: mariadb
-  #   restart: always
-  #   environment:
-  #     MYSQL_ROOT_PASSWORD: motdepasse
-  #     MYSQL_DATABASE: nomdb
-  #     MYSQL_USER: utilisateur
-  #     MYSQL_PASSWORD: motdepasse
