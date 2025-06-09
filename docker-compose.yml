@@ -7,8 +7,8 @@ services:
     volumes:
       - ./src:/var/www/html
     environment:
-      - VIRTUAL_HOST=www.korra.dev korra.dev
-      - LETSENCRYPT_HOST=www.korra.dev korra.dev
+      - VIRTUAL_HOST=www.korra.dev,korra.dev
+      - LETSENCRYPT_HOST=www.korra.dev,korra.dev
       - LETSENCRYPT_EMAIL=admin@korra.dev
     networks:
       - web
